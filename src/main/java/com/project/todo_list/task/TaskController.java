@@ -94,7 +94,7 @@ public class TaskController {
         }
 
         this.taskRepository.delete(task);
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        return ResponseEntity.ok().body("Tarefa '" + task.getTitle() + "' excluída com sucesso");
     }
     
 }
