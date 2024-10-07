@@ -23,10 +23,10 @@ Esta é uma API de gerenciamento de tarefas (To-do List) desenvolvida em Java ut
 - 📦 **Maven**: Gerenciador de dependências e build da aplicação.
 
 
-## Requisitos
+## ✅ Requisitos
 
-- **JDK 17** ou superior
-- **Maven 3.8.1** ou superior
+- ☕ **JDK 17** ou superior
+- 📦 **Maven 3.8.1** ou superior
 
 ## 🚀 Como Rodar o Projeto
 
@@ -50,16 +50,15 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-A aplicação estará disponível em `http://localhost:8080`.
+🌐 A aplicação estará disponível em `http://localhost:8080`.
 
-## Endpoints da API
+## 🔗 Endpoints da API
 
-### Usuários
+### 👤 Usuários
 
+* **📝 POST** `/users/`: Registra um novo usuário.
 
-* **POST** `/users/`: Registra um novo usuário.
-
-    * Exemplo de corpo da requisição:
+    * 📋 Exemplo de corpo da requisição:
 
     ```json
     {
@@ -69,7 +68,7 @@ A aplicação estará disponível em `http://localhost:8080`.
     }
     ```
 
-    * Exemplo de retorno:
+    * 📤 Exemplo de retorno:
 
     ```json
     {
@@ -81,12 +80,13 @@ A aplicação estará disponível em `http://localhost:8080`.
     }
     ```
 
-### Tarefas
+### ✅ Tarefas
 
-* **POST** `/tasks/`: Cria uma nova tarefa.
+* **📝 POST** `/tasks/`: Cria uma nova tarefa.
 
-    * **Authorization**: Basic Auth (digite o username e o password informados na criação do usuário).
-    * Exemplo de corpo da requisição:
+    * **🔒 Authorization**: Basic Auth (digite o `username` e o `password` informados na criação do usuário).
+    
+    * 📋 Exemplo de corpo da requisição:
 
     ```json
     {
@@ -98,7 +98,7 @@ A aplicação estará disponível em `http://localhost:8080`.
     }
     ```
 
-    * Exemplo de retorno:
+    * 📤 Exemplo de retorno:
 
     ```json
     {
@@ -113,10 +113,11 @@ A aplicação estará disponível em `http://localhost:8080`.
     }
     ```
 
-* **GET** `/tasks/`: Lista todas as tarefas.
+* **📋 GET** `/tasks/`: Lista todas as tarefas.
 
-    * **Authorization**: Basic Auth (digite o username e o password informados na criação do usuário).
-    * Exemplo de retorno:
+    * **🔒 Authorization**: Basic Auth (digite o `username` e o `password` informados na criação do usuário).
+    
+    * 📋 Exemplo de retorno:
     
     ```json
     [
@@ -143,13 +144,13 @@ A aplicação estará disponível em `http://localhost:8080`.
     ]
     ```
 
-* **PUT** `/tasks/{id}`: Atualiza uma tarefa existente, passando o `id` da tarefa como parâmetro.
+* **✏️ PUT** `/tasks/{id}`: Atualiza uma tarefa existente, passando o `id` da tarefa como parâmetro.
 
-    * **Authorization**: Basic Auth (digite o username e o password informados na criação do usuário).
+    * **🔒 Authorization**: Basic Auth (digite o `username` e o `password` informados na criação do usuário).
     
-    * **Exemplo de URL**: `http://localhost:8080/tasks/f8f25626-41c2-4188-b0a6-6a22e910adee`
+    * **🔗 Exemplo de URL**: `http://localhost:8080/tasks/f8f25626-41c2-4188-b0a6-6a22e910adee`
     
-    * Exemplo de corpo da requisição:
+    * 📋 Exemplo de corpo da requisição:
 
     ```json
     {
@@ -157,7 +158,7 @@ A aplicação estará disponível em `http://localhost:8080`.
     }
     ```
 
-    * Exemplo de retorno:
+    * 📤 Exemplo de retorno:
 
     ```json
     {
@@ -172,21 +173,22 @@ A aplicação estará disponível em `http://localhost:8080`.
     }
     ```
 
-* **DELETE** `/tasks/{id}`: Exclui uma tarefa, passando o `id` da tarefa como parâmetro.
+* **🗑️ DELETE** `/tasks/{id}`: Exclui uma tarefa, passando o `id` da tarefa como parâmetro.
 
-    * **Authorization**: Basic Auth (digite o username e o password informados na criação do usuário).
+    * **🔒 Authorization**: Basic Auth (digite o `username` e o `password` informados na criação do usuário).
     
-    * **Exemplo de URL**: `http://localhost:8080/tasks/f410a093-1037-4de0-a980-45fe7491e7e8`
+    * **🔗 Exemplo de URL**: `http://localhost:8080/tasks/f410a093-1037-4de0-a980-45fe7491e7e8`
 
 
 ## 🗄️ Banco de Dados
 
 Esta aplicação utiliza o banco de dados H2 em memória. Para acessar o console do H2, após rodar a aplicação, acesse:
 
-* URL: http://localhost:8080/h2-console
-* JDBC URL: jdbc:h2:mem:todolist
-* Username: admin
-* Password: admin
+🔗 **Acesso ao Console H2**:
+- **URL**: [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
+- **JDBC URL**: `jdbc:h2:mem:todolist`
+- **Username**: `admin`
+- **Password**: `admin`
 
 ## 🔒 Segurança e Autenticação
 
@@ -247,3 +249,15 @@ Aqui estão as principais dependências utilizadas no projeto:
 
     </dependencies>
 ```
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Se você tiver ideias para melhorias ou correções, faça um fork deste repositório, crie uma branch com suas alterações e envie um pull request.
+
+
+## 📞 Contato 
+
+<div>
+    <a href="https://www.linkedin.com/in/joschonarth/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+    <a href="mailto:joschonarth@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+</div>
